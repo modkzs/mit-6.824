@@ -81,7 +81,7 @@ func check(t *testing.T, files []string) {
 		i++
 	}
 	if i != nNumber {
-		t.Fatalf("Expected %d lines in output\n", nNumber)
+		t.Fatalf("Expected %d lines in output, actully %d\n", nNumber, i)
 	}
 }
 
@@ -144,6 +144,8 @@ func cleanup(mr *Master) {
 }
 
 func TestSequentialSingle(t *testing.T) {
+	println("TestSequentialSingle")
+	println(makeInputs(1))
 	mr := Sequential("test", makeInputs(1), 1, MapFunc, ReduceFunc)
 	mr.Wait()
 	check(t, mr.files)
@@ -152,6 +154,7 @@ func TestSequentialSingle(t *testing.T) {
 }
 
 func TestSequentialMany(t *testing.T) {
+	println("TestSequentialMany")
 	mr := Sequential("test", makeInputs(5), 3, MapFunc, ReduceFunc)
 	mr.Wait()
 	check(t, mr.files)
@@ -160,6 +163,7 @@ func TestSequentialMany(t *testing.T) {
 }
 
 func TestBasic(t *testing.T) {
+	println("TestBasic")
 	mr := setup()
 	for i := 0; i < 2; i++ {
 		go RunWorker(mr.address, port("worker"+strconv.Itoa(i)),
@@ -172,6 +176,7 @@ func TestBasic(t *testing.T) {
 }
 
 func TestOneFailure(t *testing.T) {
+	println("TestOneFailure")
 	mr := setup()
 	// Start 2 workers that fail after 10 tasks
 	go RunWorker(mr.address, port("worker"+strconv.Itoa(0)),
@@ -185,6 +190,7 @@ func TestOneFailure(t *testing.T) {
 }
 
 func TestManyFailures(t *testing.T) {
+	println("TestManyFailures")
 	mr := setup()
 	i := 0
 	done := false
