@@ -38,7 +38,6 @@ func doReduce(
 	// file.Close()
 	kvs := make(map[string][]string)
 	for i := 0; i < nMap; i++ {
-		println(reduceName(jobName, i, reduceTaskNumber))
 		file, _ := os.Open(reduceName(jobName, i, reduceTaskNumber))
 		dec := json.NewDecoder(file)
 
@@ -52,7 +51,6 @@ func doReduce(
 			l, _ := kvs[kv.Key]
 			kvs[kv.Key] = append(l, kv.Value)
 		}
-
 	}
 
 	out, _ := os.Create(mergeName(jobName, reduceTaskNumber))
@@ -63,7 +61,4 @@ func doReduce(
 		i++
 		enc.Encode(KeyValue{k, reduceF(k, v)})
 	}
-	println(i)
-
-	println("reduce over")
 }

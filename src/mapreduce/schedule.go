@@ -10,9 +10,28 @@ func (mr *Master) schedule(phase jobPhase) {
 	case mapPhase:
 		ntasks = len(mr.files)
 		nios = mr.nReduce
+
+		for i := 0; i < ntasks; i++ {
+			work := <-mr.registerChannel
+			arg := DoTaskArgs{mr.jobName, mr.files[i], mapPhase, i, nios}
+			go func() {
+				call(work, "Worker.DoTask", &arg, new(struct{}))
+				mr.registerChannel <- work
+			}()
+		}
+
 	case reducePhase:
 		ntasks = mr.nReduce
 		nios = len(mr.files)
+		for i := 0; i < nios; i++ {
+			work := <-mr.registerChannel
+			arg := DoTaskArgs{mr.jobName, mr.files[i], reducePhase, i, nios}
+			go func() {
+				call(work, "Worker.DoTask", &arg, new(struct{}))
+				mr.registerChannel <- work
+			}()
+		}
+
 	}
 
 	fmt.Printf("Schedule: %v %v tasks (%d I/Os)\n", ntasks, phase, nios)

@@ -17,6 +17,8 @@ type Master struct {
 	doneChannel     chan bool
 	workers         []string // protected by the mutex
 
+	scheduleChannel chan string
+
 	// Per-task information
 	jobName string   // Name of currently executing job
 	files   []string // Input files
@@ -27,6 +29,9 @@ type Master struct {
 	stats    []int
 }
 
+// FinishArgs is used in Finish
+type FinishArgs RegisterArgs
+
 // Register is an RPC method that is called by workers after they have started
 // up to report that they are ready to receive tasks.
 func (mr *Master) Register(args *RegisterArgs, _ *struct{}) error {
@@ -36,7 +41,14 @@ func (mr *Master) Register(args *RegisterArgs, _ *struct{}) error {
 	mr.workers = append(mr.workers, args.Worker)
 	go func() {
 		mr.registerChannel <- args.Worker
+		mr.scheduleChannel <- args.Worker
 	}()
+	return nil
+}
+
+// Finish is an RPC method that's called by workers after finish current job
+func (mr *Master) Finish(args *FinishArgs, _ struct{}) error {
+	mr.registerChannel <- args.Worker
 	return nil
 }
 
@@ -47,6 +59,7 @@ func newMaster(master string) (mr *Master) {
 	mr.shutdown = make(chan struct{})
 	mr.registerChannel = make(chan string)
 	mr.doneChannel = make(chan bool)
+	mr.scheduleChannel = make(chan string)
 	return
 }
 

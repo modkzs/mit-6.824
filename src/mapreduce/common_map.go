@@ -71,7 +71,6 @@ func doMap(
 		hash := ihash(kv.Key)
 		encs[int(hash)%nReduce].Encode(kv)
 	}
-	println("map over")
 }
 
 func ihash(s string) uint32 {
