@@ -15,8 +15,12 @@ func (mr *Master) schedule(phase jobPhase) {
 			work := <-mr.registerChannel
 			arg := DoTaskArgs{mr.jobName, mr.files[i], mapPhase, i, nios}
 			go func() {
-				call(work, "Worker.DoTask", &arg, new(struct{}))
-				mr.registerChannel <- work
+				ok := call(work, "Worker.DoTask", &arg, new(struct{}))
+				if ok {
+					mr.registerChannel <- work
+				} else {
+					i--
+				}
 			}()
 		}
 
@@ -27,8 +31,12 @@ func (mr *Master) schedule(phase jobPhase) {
 			work := <-mr.registerChannel
 			arg := DoTaskArgs{mr.jobName, mr.files[i], reducePhase, i, nios}
 			go func() {
-				call(work, "Worker.DoTask", &arg, new(struct{}))
-				mr.registerChannel <- work
+				ok := call(work, "Worker.DoTask", &arg, new(struct{}))
+				if ok {
+					mr.registerChannel <- work
+				} else {
+					i--
+				}
 			}()
 		}
 
