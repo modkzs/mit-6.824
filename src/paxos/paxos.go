@@ -20,16 +20,20 @@ package paxos
 // px.Min() int -- instances before this seq have been forgotten
 //
 
-import "net"
-import "net/rpc"
-import "log"
-
-import "os"
-import "syscall"
-import "sync"
-import "sync/atomic"
-import "fmt"
-import "math/rand"
+import (
+	"fmt"
+	"log"
+	"math/rand"
+	"net"
+	"net/rpc"
+	"os"
+	"strconv"
+	"strings"
+	"sync"
+	"sync/atomic"
+	"syscall"
+	"time"
+)
 
 // px.Status() return values, indicating
 // whether an agreement has been decided,
@@ -46,19 +50,20 @@ const (
 type Paxos struct {
 	mu         sync.Mutex
 	l          net.Listener
-	dead       int32               // for testing
-	unreliable int32               // for testing
-	rpcCount   int32               // for testing
+	dead       int32 // for testing
+	unreliable int32 // for testing
+	rpcCount   int32 // for testing
 	peers      []string
 
 	me         int                 // index into peers[]
-	acceptSeq  int                 // current accept seq
+	acceptSeq  string              // current accept seq
 	v          interface{}         // current accept value
-	prepareSeq int                 // current prepare seq
+	prepareSeq string              // current prepare seq
 	values     map[int]interface{} // all history value
 	doneSeq    int                 // used in Done
 	minSeq     int                 // seq already forget
-	tsToSeq    map[int]int         // a map from seq to ts, which is unique globally
+	tsToSeq    map[int]string      // a map from seq to ts, which is unique globally
+	status 	   map[int]Fate         // a map from seq to status
 }
 
 //
@@ -99,25 +104,25 @@ func call(srv string, name string, args interface{}, reply interface{}) bool {
 
 // PrepareArg is used in Paxos.Prepare function
 type PrepareArg struct {
-	Seq int
+	Seq string
 }
 
 // PrepareReply is used in Paxos.Prepare function
 type PrepareReply struct {
-	Seq    int
+	Seq    string
 	V      interface{}
 	Result bool
 }
 
 // AcceptArg is used in Paxos.Accept function
 type AcceptArg struct {
-	Seq int
+	Seq string
 	V   interface{}
 }
 
 // AcceptReply is used in Paxos.Accept function
 type AcceptReply struct {
-	Seq    int
+	Seq    string
 	Result bool
 }
 
@@ -128,10 +133,17 @@ type DecideArg struct {
 }
 
 // ForgetArg used in Paxos.Forget function
-type ForgetArg PrepareArg
+type ForgetArg struct {
+	Seq int
+}
 
 // DoneReply used in Paxos.GetDone function
-type DoneReply PrepareArg
+type DoneReply ForgetArg
+
+// UpdateReply used in Paxos.GetDone function
+type UpdateArg ForgetArg
+
+
 
 //
 // the application wants paxos to start agreement on
@@ -140,15 +152,17 @@ type DoneReply PrepareArg
 // call Status() to find out if/when agreement
 // is reached.
 //
-func (px *Paxos) Start(seq int, v interface{}) {
+func (px *Paxos) Start(s int, v interface{}) {
 	// Your code here.
 	go func() {
 		length := len(px.peers)
 		argee := 0
 		// prepare
-		fmt.Printf("%v start prepare\n", px.me)
+		fmt.Printf("%v start prepare, arg: %v\n", px.me, s)
 
 		// replace seq to a globally unique epoch
+		t := time.Now().UnixNano()
+		seq := strconv.Itoa(s) + "-" + strconv.FormatInt(t, 10)
 
 		for i, peer := range px.peers {
 			arg := PrepareArg{seq}
@@ -168,13 +182,21 @@ func (px *Paxos) Start(seq int, v interface{}) {
 			}
 		}
 		if argee <= length/2 {
-			fmt.Printf("paxos %v fail to get major agree, seq %v\n", px.me, seq)
+			fmt.Printf("%v fail to get major agree, seq %v\n", px.me, seq)
+			arg := UpdateArg{s}
+			for i, peer := range px.peers {
+				if i == px.me {
+					px.Update(arg, new(struct{}))
+				} else {
+					call(peer, "Paxos.Update", arg, new(struct{}))
+				}
+			}
 			return
 		}
 
 		argee = 0
 		// accept
-		fmt.Printf("%v start accept\n", px.me)
+		fmt.Printf("%v start accept, arg: seq %v v %v\n", px.me, seq, v)
 		for i, peer := range px.peers {
 			arg := AcceptArg{seq, v}
 			arg.Seq = seq
@@ -191,13 +213,21 @@ func (px *Paxos) Start(seq int, v interface{}) {
 			}
 		}
 		if argee <= length/2 {
+			arg := UpdateArg{s}
+			for i, peer := range px.peers {
+				if i == px.me {
+					px.Update(arg, new(struct{}))
+				} else {
+					call(peer, "Paxos.Update", arg, new(struct{}))
+				}
+			}
 			return
 		}
 
 		//decide
 		fmt.Printf("%v start decide\n", px.me)
 		for i, peer := range px.peers {
-			arg := DecideArg{v, seq}
+			arg := DecideArg{v, s}
 			if i == px.me {
 				px.Decide(arg, new(struct{}))
 			} else {
@@ -218,6 +248,11 @@ func (px *Paxos) Done(seq int) {
 	px.doneSeq = seq
 }
 
+func (px *Paxos) getSeq(seq string) int{
+	s, _ := strconv.Atoi(strings.Split(seq, "-")[0])
+	return s
+}
+
 // Prepare function, used by acceptor
 func (px *Paxos) Prepare(arg PrepareArg, reply *PrepareReply) error {
 	px.mu.Lock()
@@ -228,6 +263,7 @@ func (px *Paxos) Prepare(arg PrepareArg, reply *PrepareReply) error {
 	if arg.Seq < px.prepareSeq {
 		fmt.Printf("paxos %v prepare, seq: %v, fail with %v\n", px.me, arg.Seq, px.prepareSeq)
 		reply.Result = false
+		px.status[px.getSeq(arg.Seq)] = Decided
 	} else {
 		fmt.Printf("paxos %v prepare, seq: %v, success\n", px.me, arg.Seq)
 		px.prepareSeq = arg.Seq
@@ -244,7 +280,7 @@ func (px *Paxos) Accept(arg AcceptArg, reply *AcceptReply) error {
 	px.mu.Lock()
 	defer px.mu.Unlock()
 
-	fmt.Printf("paxos %v accept, seq: %v, value: %v\n", px.me, arg.Seq, arg.V)
+	fmt.Printf("paxos %v accept, seq: %v, value: %v\n with prepare seq %v", px.me, arg.Seq, arg.V, px.prepareSeq)
 
 	if arg.Seq >= px.prepareSeq {
 		px.acceptSeq = arg.Seq
@@ -255,6 +291,7 @@ func (px *Paxos) Accept(arg AcceptArg, reply *AcceptReply) error {
 		reply.Seq = arg.Seq
 	} else {
 		reply.Result = false
+		px.status[px.getSeq(arg.Seq)] = Decided
 	}
 	return nil
 }
@@ -263,9 +300,18 @@ func (px *Paxos) Accept(arg AcceptArg, reply *AcceptReply) error {
 func (px *Paxos) Decide(arg DecideArg, _ *struct{}) error {
 	px.mu.Lock()
 	defer px.mu.Unlock()
-	fmt.Printf("paxos %d decide, seq: %d, value: %s\n", px.me, arg.Seq, arg.V)
+	fmt.Printf("paxos %v decide, seq: %v, value: %v\n", px.me, arg.Seq, arg.V)
 
 	px.values[arg.Seq] = arg.V
+	px.status[arg.Seq] = Decided
+	return nil
+}
+
+func (px *Paxos) Update(arg UpdateArg, _ *struct{}) error {
+	px.mu.Lock()
+	defer px.mu.Unlock()
+
+	px.status[arg.Seq] = Decided
 	return nil
 }
 
@@ -276,7 +322,7 @@ func (px *Paxos) Decide(arg DecideArg, _ *struct{}) error {
 //
 func (px *Paxos) Max() int {
 	// Your code here.
-	return px.prepareSeq
+	return px.getSeq(px.prepareSeq)
 }
 
 //
@@ -309,17 +355,19 @@ func (px *Paxos) Max() int {
 //
 func (px *Paxos) Min() int {
 	// You code here.
-	min := px.doneSeq
+	reply := DoneReply{}
+	px.GetDone(*new(struct{}), &reply)
+	min := reply.Seq
 	for i, peer := range px.peers {
 		if i != px.me {
 			reply := DoneReply{}
-			result := call(peer, "Paxos.GetDone", new(struct{}), &reply)
+			result := call(peer, "Paxos.GetDone", *new(struct{}), &reply)
 			if result {
 				if min > reply.Seq {
 					min = reply.Seq
 				}
 			} else {
-				return px.minSeq
+				return min
 			}
 		}
 	}
@@ -341,7 +389,8 @@ func (px *Paxos) GetDone(_ struct{}, reply *DoneReply) error {
 	px.mu.Lock()
 	defer px.mu.Unlock()
 
-	reply.Seq = px.doneSeq
+	// min, _ := strconv.Atoi(strings.Split(px.minSeq, "-")[0])
+	reply.Seq = px.minSeq
 	return nil
 }
 
@@ -349,7 +398,6 @@ func (px *Paxos) GetDone(_ struct{}, reply *DoneReply) error {
 func (px *Paxos) Forget(arg ForgetArg, _ *struct{}) error {
 	px.mu.Lock()
 	defer px.mu.Unlock()
-
 	for k := range px.values {
 		if k <= arg.Seq {
 			delete(px.values, k)
@@ -370,7 +418,7 @@ func (px *Paxos) Status(seq int) (Fate, interface{}) {
 	// Your code here.
 	if seq < px.minSeq {
 		return Forgotten, nil
-	} else if v, ok := px.values[seq]; ok {
+	} else if v, ok := px.status[seq]; ok {
 		return Decided, v
 	} else {
 		return Pending, nil
@@ -421,13 +469,14 @@ func Make(peers []string, me int, rpcs *rpc.Server) *Paxos {
 	px.me = me
 
 	// Your initialization code here.
-	px.prepareSeq = -1
-	px.acceptSeq = -1
+	px.prepareSeq = ""
+	px.acceptSeq = ""
 	px.v = nil
 	px.values = make(map[int]interface{})
-	px.tsToSeq = make(map[int]int)
+	px.tsToSeq = make(map[int]string)
 	px.minSeq = -1
 	px.doneSeq = -1
+	px.status = make(map[int]Fate)
 
 	if rpcs != nil {
 		// caller will create socket &c
