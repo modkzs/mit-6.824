@@ -31,7 +31,6 @@ import "sync/atomic"
 import "fmt"
 import "math/rand"
 
-
 // px.Status() return values, indicating
 // whether an agreement has been decided,
 // or Paxos has not yet reached agreement,
@@ -47,14 +46,19 @@ const (
 type Paxos struct {
 	mu         sync.Mutex
 	l          net.Listener
-	dead       int32 // for testing
-	unreliable int32 // for testing
-	rpcCount   int32 // for testing
+	dead       int32               // for testing
+	unreliable int32               // for testing
+	rpcCount   int32               // for testing
 	peers      []string
-	me         int // index into peers[]
 
-
-	// Your data here.
+	me         int                 // index into peers[]
+	acceptSeq  int                 // current accept seq
+	v          interface{}         // current accept value
+	prepareSeq int                 // current prepare seq
+	values     map[int]interface{} // all history value
+	doneSeq    int                 // used in Done
+	minSeq     int                 // seq already forget
+	tsToSeq    map[int]int         // a map from seq to ts, which is unique globally
 }
 
 //
@@ -93,6 +97,41 @@ func call(srv string, name string, args interface{}, reply interface{}) bool {
 	return false
 }
 
+// PrepareArg is used in Paxos.Prepare function
+type PrepareArg struct {
+	Seq int
+}
+
+// PrepareReply is used in Paxos.Prepare function
+type PrepareReply struct {
+	Seq    int
+	V      interface{}
+	Result bool
+}
+
+// AcceptArg is used in Paxos.Accept function
+type AcceptArg struct {
+	Seq int
+	V   interface{}
+}
+
+// AcceptReply is used in Paxos.Accept function
+type AcceptReply struct {
+	Seq    int
+	Result bool
+}
+
+// DecideArg is used in Paxos.Decide function
+type DecideArg struct {
+	V   interface{}
+	Seq int
+}
+
+// ForgetArg used in Paxos.Forget function
+type ForgetArg PrepareArg
+
+// DoneReply used in Paxos.GetDone function
+type DoneReply PrepareArg
 
 //
 // the application wants paxos to start agreement on
@@ -103,6 +142,69 @@ func call(srv string, name string, args interface{}, reply interface{}) bool {
 //
 func (px *Paxos) Start(seq int, v interface{}) {
 	// Your code here.
+	go func() {
+		length := len(px.peers)
+		argee := 0
+		// prepare
+		fmt.Printf("%v start prepare\n", px.me)
+
+		// replace seq to a globally unique epoch
+
+		for i, peer := range px.peers {
+			arg := PrepareArg{seq}
+			reply := PrepareReply{}
+			if i == px.me {
+				px.Prepare(arg, &reply)
+				continue
+			} else {
+				call(peer, "Paxos.Prepare", arg, &reply)
+				fmt.Printf("%v prepare, arg: seq %v,  result %v\n", i, arg.Seq, reply.Result)
+			}
+			if reply.Result {
+				argee++
+			}
+			if reply.Seq > seq {
+				v = reply.V
+			}
+		}
+		if argee <= length/2 {
+			fmt.Printf("paxos %v fail to get major agree, seq %v\n", px.me, seq)
+			return
+		}
+
+		argee = 0
+		// accept
+		fmt.Printf("%v start accept\n", px.me)
+		for i, peer := range px.peers {
+			arg := AcceptArg{seq, v}
+			arg.Seq = seq
+			reply := AcceptReply{}
+
+			if i == px.me {
+				px.Accept(arg, &reply)
+			} else {
+				call(peer, "Paxos.Accept", arg, &reply)
+				fmt.Printf("%v accept, arg: seq %v v %v, result %v\n", i, arg.Seq, arg.V, reply.Result)
+			}
+			if reply.Result {
+				argee++
+			}
+		}
+		if argee <= length/2 {
+			return
+		}
+
+		//decide
+		fmt.Printf("%v start decide\n", px.me)
+		for i, peer := range px.peers {
+			arg := DecideArg{v, seq}
+			if i == px.me {
+				px.Decide(arg, new(struct{}))
+			} else {
+				call(peer, "Paxos.Decide", arg, new(struct{}))
+			}
+		}
+	}()
 }
 
 //
@@ -113,6 +215,58 @@ func (px *Paxos) Start(seq int, v interface{}) {
 //
 func (px *Paxos) Done(seq int) {
 	// Your code here.
+	px.doneSeq = seq
+}
+
+// Prepare function, used by acceptor
+func (px *Paxos) Prepare(arg PrepareArg, reply *PrepareReply) error {
+	px.mu.Lock()
+	defer px.mu.Unlock()
+
+	fmt.Printf("paxos %v prepare, seq: %v with prepare seq %v\n", px.me, arg.Seq, px.prepareSeq)
+
+	if arg.Seq < px.prepareSeq {
+		fmt.Printf("paxos %v prepare, seq: %v, fail with %v\n", px.me, arg.Seq, px.prepareSeq)
+		reply.Result = false
+	} else {
+		fmt.Printf("paxos %v prepare, seq: %v, success\n", px.me, arg.Seq)
+		px.prepareSeq = arg.Seq
+		reply.Result = true
+		reply.Seq = px.acceptSeq
+		reply.V = px.v
+	}
+
+	return nil
+}
+
+// Accept function, used by acceptor
+func (px *Paxos) Accept(arg AcceptArg, reply *AcceptReply) error {
+	px.mu.Lock()
+	defer px.mu.Unlock()
+
+	fmt.Printf("paxos %v accept, seq: %v, value: %v\n", px.me, arg.Seq, arg.V)
+
+	if arg.Seq >= px.prepareSeq {
+		px.acceptSeq = arg.Seq
+		px.v = arg.V
+		px.prepareSeq = arg.Seq
+
+		reply.Result = true
+		reply.Seq = arg.Seq
+	} else {
+		reply.Result = false
+	}
+	return nil
+}
+
+// Decide function is used by proposer
+func (px *Paxos) Decide(arg DecideArg, _ *struct{}) error {
+	px.mu.Lock()
+	defer px.mu.Unlock()
+	fmt.Printf("paxos %d decide, seq: %d, value: %s\n", px.me, arg.Seq, arg.V)
+
+	px.values[arg.Seq] = arg.V
+	return nil
 }
 
 //
@@ -122,7 +276,7 @@ func (px *Paxos) Done(seq int) {
 //
 func (px *Paxos) Max() int {
 	// Your code here.
-	return 0
+	return px.prepareSeq
 }
 
 //
@@ -155,7 +309,54 @@ func (px *Paxos) Max() int {
 //
 func (px *Paxos) Min() int {
 	// You code here.
-	return 0
+	min := px.doneSeq
+	for i, peer := range px.peers {
+		if i != px.me {
+			reply := DoneReply{}
+			result := call(peer, "Paxos.GetDone", new(struct{}), &reply)
+			if result {
+				if min > reply.Seq {
+					min = reply.Seq
+				}
+			} else {
+				return px.minSeq
+			}
+		}
+	}
+
+	for i, peer := range px.peers {
+		arg := ForgetArg{min}
+		if i != px.me {
+			call(peer, "Paxos.Forget", arg, new(struct{}))
+		} else {
+			px.Forget(arg, new(struct{}))
+		}
+	}
+
+	return min
+}
+
+// GetDone : used to get min done seq
+func (px *Paxos) GetDone(_ struct{}, reply *DoneReply) error {
+	px.mu.Lock()
+	defer px.mu.Unlock()
+
+	reply.Seq = px.doneSeq
+	return nil
+}
+
+// Forget : release all record whose seq < arg.seq
+func (px *Paxos) Forget(arg ForgetArg, _ *struct{}) error {
+	px.mu.Lock()
+	defer px.mu.Unlock()
+
+	for k := range px.values {
+		if k <= arg.Seq {
+			delete(px.values, k)
+		}
+	}
+	px.minSeq = arg.Seq
+	return nil
 }
 
 //
@@ -167,10 +368,14 @@ func (px *Paxos) Min() int {
 //
 func (px *Paxos) Status(seq int) (Fate, interface{}) {
 	// Your code here.
-	return Pending, nil
+	if seq < px.minSeq {
+		return Forgotten, nil
+	} else if v, ok := px.values[seq]; ok {
+		return Decided, v
+	} else {
+		return Pending, nil
+	}
 }
-
-
 
 //
 // tell the peer to shut itself down.
@@ -210,12 +415,19 @@ func (px *Paxos) isunreliable() bool {
 // are in peers[]. this servers port is peers[me].
 //
 func Make(peers []string, me int, rpcs *rpc.Server) *Paxos {
+	fmt.Printf("init paxos %v\n", me)
 	px := &Paxos{}
 	px.peers = peers
 	px.me = me
 
-
 	// Your initialization code here.
+	px.prepareSeq = -1
+	px.acceptSeq = -1
+	px.v = nil
+	px.values = make(map[int]interface{})
+	px.tsToSeq = make(map[int]int)
+	px.minSeq = -1
+	px.doneSeq = -1
 
 	if rpcs != nil {
 		// caller will create socket &c
@@ -267,7 +479,6 @@ func Make(peers []string, me int, rpcs *rpc.Server) *Paxos {
 			}
 		}()
 	}
-
 
 	return px
 }
