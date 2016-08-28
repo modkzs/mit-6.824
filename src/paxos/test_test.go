@@ -493,7 +493,7 @@ func TestDoneMax(t *testing.T) {
 	for i := 0; i < npaxos; i++ {
 		mx := pxa[i].Max()
 		if mx != 10 {
-			t.Fatalf("Max() did not return correct result %d after calling Done(); returned %d", 10, mx)
+			t.Fatalf("%v Max() did not return correct result %d after calling Done(); returned %d", i, 10, mx)
 		}
 	}
 
