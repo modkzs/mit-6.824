@@ -87,7 +87,9 @@ func (e *ClientEnd) Call(svcMeth string, args interface{}, reply interface{}) bo
 
 	qb := new(bytes.Buffer)
 	qe := gob.NewEncoder(qb)
-	qe.Encode(args)
+	if err := qe.Encode(args); err != nil {
+		log.Fatalf("ClientEnd.Call(): encode reply: %v\n", err)
+	}
 	req.args = qb.Bytes()
 
 	e.ch <- req
