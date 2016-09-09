@@ -1,0 +1,2212 @@
+ELECTION_START : 0 start to election with term -1, last log 0 -1
+Test: Figure 8 (unreliable) ...
+ELECTION_START : 1 start to election with term -1, last log 0 -1
+ELECTION_VOTE1: 4 vote for 1 with term : 0 0
+ELECTION_START : 2 start to election with term -1, last log 0 -1
+ELECTION_START : 3 start to election with term -1, last log 0 -1
+ELECTION_VOTE1: 3 vote for 2 with term : 0 0
+ELECTION_VOTE1: 2 vote for 0 with term : 0 0
+ELECTION_VOTE1: 0 vote for 1 with term : 0 0
+ELECTION_WIN : 1 win with 0
+ELECTION_VOTE1: 1 vote for 2 with term : 0 0
+ELECTION_START : 2 start to election with term 0, last log 0 -1
+ELECTION_VOTE1: 1 vote for 2 with term : 1 1
+ELECTION_VOTE1: 3 vote for 2 with term : 1 1
+ELECTION_WIN : 2 win with 1
+COMMAND : 2 0 1 4208
+ELECTION_VOTE1: 4 vote for 2 with term : 1 1
+ELECTION_VOTE1: 0 vote for 2 with term : 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 0 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 0 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 0 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 0 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+COMMAND : 2 1 1 4208
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 4 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 3 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 1 to 0 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 1 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 1 to 0 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 1 -1
+APPEND: 0 receive entries from 2, with index -1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 1 to 0 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+COMMAND : 2 2 1 4208
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 2 0
+APPEND: 3 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 2 to 1 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 2 0
+APPEND: 0 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 2 to 1 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 2 0
+APPEND: 4 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 2 to 1 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 2 0
+APPEND: 1 receive entries from 2, with index 0 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 2 to 1 with 1 1
+COMMIT : 2 commit from -1 to 1, len 3 
+COMMIT : 1 1 2 1 1 
+COMMIT : 2 commit, index 0, content 4208 
+COMMIT : 2 commit, index 1, content 4208 
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+COMMIT : 4 commit from -1 to 1, len 3 
+COMMIT : 4 commit, index 0, content 4208 
+COMMIT : 4 commit, index 1, content 4208 
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+COMMIT : 1 commit from -1 to 1, len 3 
+COMMIT : 1 commit, index 0, content 4208 
+COMMIT : 1 commit, index 1, content 4208 
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+COMMIT : 3 commit from -1 to 1, len 3 
+COMMIT : 3 commit, index 0, content 4208 
+COMMIT : 3 commit, index 1, content 4208 
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+COMMIT : 0 commit from -1 to 1, len 3 
+COMMIT : 0 commit, index 0, content 4208 
+COMMIT : 0 commit, index 1, content 4208 
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+COMMAND : 2 3 1 4208
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 3 1
+APPEND: 0 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 3 to 2 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 3 1
+APPEND: 1 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 3 to 2 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 3 1
+APPEND: 4 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 3 to 2 with 1 1
+COMMIT : 2 commit from 1 to 2, len 4 
+COMMIT : 2 2 3 1 2 
+COMMIT : 2 commit, index 2, content 4208 
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+COMMIT : 1 commit from 1 to 2, len 4 
+COMMIT : 1 commit, index 2, content 4208 
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+COMMIT : 0 commit from 1 to 2, len 4 
+COMMIT : 0 commit, index 2, content 4208 
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 3 1
+APPEND: 3 receive entries from 2, with index 1 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 3 to 2 with 1 1
+COMMIT : 3 commit from 1 to 2, len 4 
+COMMIT : 3 commit, index 2, content 4208 
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+COMMIT : 4 commit from 1 to 2, len 4 
+COMMIT : 4 commit, index 2, content 4208 
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+COMMAND : 2 4 1 4208
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 4 2
+APPEND: 1 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 4 to 3 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 4 2
+APPEND: 0 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 4 to 3 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 4 2
+APPEND: 3 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 4 to 3 with 1 1
+COMMIT : 2 commit from 2 to 3, len 5 
+COMMIT : 3 3 4 3 2 
+COMMIT : 2 commit, index 3, content 4208 
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+COMMIT : 0 commit from 2 to 3, len 5 
+COMMIT : 0 commit, index 3, content 4208 
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+COMMIT : 3 commit from 2 to 3, len 5 
+COMMIT : 3 commit, index 3, content 4208 
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 4 2
+APPEND: 4 receive entries from 2, with index 2 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 4 to 3 with 1 1
+COMMIT : 4 commit from 2 to 3, len 5 
+COMMIT : 4 commit, index 3, content 4208 
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+COMMIT : 1 commit from 2 to 3, len 5 
+COMMIT : 1 commit, index 3, content 4208 
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+APPEND_TRY: 4 get entry from 2, term: 1 1, length: 5 3
+APPEND_TRY: 0 get entry from 2, term: 1 1, length: 5 3
+APPEND: 4 receive entries from 2, with index 3 , term 1 content 4208
+APPEND: 0 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 0 cut log from 5 to 4 with 1 1
+APPEND_JUMP : 4 cut log from 5 to 4 with 1 1
+APPEND_TRY: 3 get entry from 2, term: 1 1, length: 5 3
+APPEND: 3 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 3 cut log from 5 to 4 with 1 1
+APPEND_TRY: 1 get entry from 2, term: 1 1, length: 5 3
+APPEND: 1 receive entries from 2, with index 3 , term 1 content 4208
+APPEND_JUMP : 1 cut log from 5 to 4 with 1 1
+--- FAIL: TestFigure8Unreliable (10.30s)
+	config.go:424: one(4208) failed to reach agreement
+FAIL
+exit status 1
+FAIL	raft	10.312s
