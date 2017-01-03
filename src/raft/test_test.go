@@ -50,26 +50,32 @@ func TestReElection(t *testing.T) {
 	leader1 := cfg.checkOneLeader()
 
 	// if the leader disconnects, a new one should be elected.
+	fmt.Printf("Test: %v disconnect\n", leader1)
 	cfg.disconnect(leader1)
 	cfg.checkOneLeader()
 
 	// if the old leader rejoins, that shouldn't
 	// disturb the old leader.
+	fmt.Printf("Test: %v reconnect\n", leader1)
 	cfg.connect(leader1)
 	leader2 := cfg.checkOneLeader()
 
 	// if there's no quorum, no leader should
 	// be elected.
+	fmt.Printf("Test: %v disconnect\n", leader2)
+	fmt.Printf("Test: %v disconnect\n", (leader2+1)%servers)
 	cfg.disconnect(leader2)
 	cfg.disconnect((leader2 + 1) % servers)
 	time.Sleep(2 * RaftElectionTimeout)
 	cfg.checkNoLeader()
 
 	// if a quorum arises, it should elect a leader.
+	fmt.Printf("Test: %v reconnect\n", (leader2+1)%servers)
 	cfg.connect((leader2 + 1) % servers)
 	cfg.checkOneLeader()
 
 	// re-join of last node shouldn't prevent leader from existing.
+	fmt.Printf("Test: %v reconnect\n", leader2)
 	cfg.connect(leader2)
 	cfg.checkOneLeader()
 
@@ -112,6 +118,7 @@ func TestFailAgree(t *testing.T) {
 	leader := cfg.checkOneLeader()
 	cfg.disconnect((leader + 1) % servers)
 
+	fmt.Printf("TEST: %v disconnect\n", (leader+1)%servers)
 	// agree despite one failed server?
 	cfg.one(102, servers-1)
 	cfg.one(103, servers-1)
@@ -121,6 +128,7 @@ func TestFailAgree(t *testing.T) {
 
 	// failed server re-connected
 	cfg.connect((leader + 1) % servers)
+	fmt.Printf("TEST: %v reconnect\n", (leader+1)%servers)
 
 	// agree with full set of servers?
 	cfg.one(106, servers)
@@ -294,6 +302,7 @@ func TestRejoin(t *testing.T) {
 
 	// leader network failure
 	leader1 := cfg.checkOneLeader()
+	fmt.Printf("TEST: %v disconnect\n", leader1)
 	cfg.disconnect(leader1)
 
 	// make old leader try to agree on some entries
@@ -306,14 +315,17 @@ func TestRejoin(t *testing.T) {
 
 	// new leader network failure
 	leader2 := cfg.checkOneLeader()
+	fmt.Printf("TEST: %v disconnect\n", leader2)
 	cfg.disconnect(leader2)
 
 	// old leader connected again
+	fmt.Printf("TEST: %v reconnect\n", leader1)
 	cfg.connect(leader1)
 
 	cfg.one(104, 2)
 
 	// all together now
+	fmt.Printf("TEST: %v reconnect\n", leader2)
 	cfg.connect(leader2)
 
 	cfg.one(105, servers)
@@ -764,8 +776,11 @@ func TestFigure8Unreliable(t *testing.T) {
 		}
 	}
 
+	fmt.Printf("TEST : iter over\n")
+
 	for i := 0; i < servers; i++ {
 		if cfg.connected[i] == false {
+			fmt.Printf("TEST : %v reconnect\n", i)
 			cfg.connect(i)
 		}
 	}
